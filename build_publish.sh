@@ -21,7 +21,7 @@ if [ "$1" = "" ] || [ "$1" = "test" ]; then
 fi
 
 build_name=$1;
-echo "build name: ${build_name}"
+echo "building ${build_name}"
 docker build -t ${build_name} .;
 
 # we built, now we wanna spin it up locally to poke at it.
