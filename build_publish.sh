@@ -45,7 +45,6 @@ if [ "$2" = "test" ]; then
     echo "Running ${build_name} locally for testing"
     docker run -it --rm -d -p 8080:80 --name ${build_name} ${build_name};
 elif [ "$2" = "publish" ]; then
-    echo "publishing..."
     # TODO(drewconner): add the variables from above here...
     # get moving for now and def come back to this
     # tag...
