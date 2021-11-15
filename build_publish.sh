@@ -49,7 +49,8 @@ elif [ "$2" = "publish" ]; then
     # get moving for now and def come back to this
     # tag...
     deployment="devopsblinkingboxes/devops-test:latest"
-    docker tag webserver ${deployment};
+    docker tag webserver ${deployment} >> "${OUTPUT_LOG}";
     # and then publish
-    docker push ${deployment};
+    docker push ${deployment} >> "${OUTPUT_LOG}";
+    printf "${deployment}\n"
 fi
