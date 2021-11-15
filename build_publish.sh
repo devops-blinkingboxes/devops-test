@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# I'd prefer to write this in python, but one of these had to be in _not_ python/ruby/whatever
-# and sh/bash is req'd... so here ya go.
-# for linting, I found shellcheck.net and that seemed pretty cool. I'd likely spend some time
-# there if this was a prod thing and more than one person were developing against this
-# because arguments around "formatting should look like <>!" are best left to machines with lint rules.
+# I'd prefer to write this in python bc I'm more comfortable there, but one of
+# these had to be in _not_ python/ruby/whatever and sh/bash is req'd... so here
+# ya go. for linting, I found shellcheck.net and that seemed pretty cool. I'd
+# likely spend some time there if this was a prod thing and more than one
+# person were developing against this because arguments around "formatting
+# should look like <>!" are best left to machines with lint rules.
 
 OUTPUT_LOG=/home/"${USER}"/container_build_log;
 DOCKER_HUB_ROOT="devops-blinkingboxes"
